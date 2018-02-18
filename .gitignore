@@ -1,0 +1,8 @@
+# TODO(tdial): Add files to ignore
+
+# Ignore VIM temp files
+*~
+.*~
+
+/build/default/
+/dist/default/
