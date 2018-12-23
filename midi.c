@@ -144,8 +144,8 @@ static midi_event_callback_t g_callbacks[EVT_MAX] = {0};
 
 // The null event callback is used by default for all events.
 static void null_event_cb(char channel, char a, char b) {
-    // Just implement the event counter.
-    ++g_message_counter;
+  // Do nothing. The invoke_callback() function will properly implement the
+  // global message counter.
 }
 
 
