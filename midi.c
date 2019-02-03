@@ -285,7 +285,7 @@ static status_t rx_data_byte(char byte) {
             break;
             
         // Process second byte of a "note off" message, and invoke callback.
-        // We reset the state in case there is a "running state" note off.
+        // We reset the state in case there is a "running status" note off.
         case STATE_WAITING_CHAN_NOTE_OFF_VELOCITY:
             g_data_byte_two = byte;
             invoke_callback(EVT_CHAN_NOTE_OFF);
