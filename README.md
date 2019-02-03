@@ -53,6 +53,13 @@ must take to use the library.
    UART device. Calling this function "drives" the event dispatch
    system and may result in callback invocation.
 
+## Implementation Notes
+
+* **Note On/Off** Some devices do not seem to send note off messages. Rather,
+they send note on messages with a velocity of zero. Your application should
+probably account for this by checking for this condition and delegating to
+your note off handler.
+
 ## Current Status
 
 This library is currently in ALPHA.
